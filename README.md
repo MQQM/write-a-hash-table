@@ -12,7 +12,7 @@ It can be roughly divided into three components:
 - Insert, search and delete methods. 
 - Resizing of hash table. 
 
-## Construction of Hash table
+## Construction of hash table
 From a code-level perspective, a hash table can be defined as a struct which contains a second rank pointer variable and two integer variables, as shown in the picture below.
 
 ![structure](./pictures/structure.png)
