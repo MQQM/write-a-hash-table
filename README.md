@@ -56,7 +56,7 @@ void ht_delete(ht_hash_table* h, const char* key);
 
     Thus, items[index] is set to a pointer which points to a specific struct variable (In insert method, we "jump over" such pointer). It is also for this reason, the hash table will contain more and more such "unusual pointers" when more and more delete method get performed. **Personally, I think it is a potential issue**. Surely, resize the hash table can somewhat alleviate this issue. 
 
-## Resizing of hash table. 
+## Resizing of hash table 
 Before each insert or delete operation is performed, we check load of hash table (load =  number of valid items / total number of buckets). If the load exceeds or falls below a pre-defined threshold, we resize the hash table. We construct a new hash table with twice or half size and only copy valid items from the old one. Then swap two pointers. The new hash table that contains old memory is deleted. 
 
 Drawing is awkward, thank you for your patience. 
